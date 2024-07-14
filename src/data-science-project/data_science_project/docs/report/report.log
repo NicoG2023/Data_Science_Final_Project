@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.7.13)  13 JUL 2024 18:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.7.13)  14 JUL 2024 14:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -27,83 +27,138 @@ File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
+) (C:\Users\juan_\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\juan_\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+) (C:\Users\juan_\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\juan_\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (C:\Users\juan_\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (C:\Users\juan_\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+) (C:\Users\juan_\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count195
+\float@exts=\toks20
+\float@box=\box51
+\@float@everytoks=\toks21
+\@floatcapt=\box52
 ) (C:\Users\juan_\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count195
-\l__pdf_internal_box=\box51
+\l__color_backend_stack_int=\count196
+\l__pdf_internal_box=\box53
 ) (report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+ (C:\Users\juan_\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count197
+\scratchdimen=\dimen143
+\scratchbox=\box54
+\nofMPsegments=\count198
+\nofMParguments=\count199
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count266
+\MPscratchDim=\dimen144
+\MPnumerator=\count267
+\makeMPintoPDFobject=\count268
+\everyMPtoPDFconversion=\toks23
+) (C:\Users\juan_\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\juan_\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 13.
+(Font)              <12> on input line 12.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 13.
+(Font)              <8> on input line 12.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 13.
+(Font)              <6> on input line 12.
+<images/train_df.png, id=1, 824.32968pt x 203.25937pt>
+File: images/train_df.png Graphic file (type png)
+<use images/train_df.png>
+Package pdftex.def Info: images/train_df.png  used on input line 24.
+(pdftex.def)             Requested size: 310.4979pt x 76.56013pt.
+<images/descrip_train.png, id=3, 776.14969pt x 298.11375pt>
+File: images/descrip_train.png Graphic file (type png)
+<use images/descrip_train.png>
+Package pdftex.def Info: images/descrip_train.png  used on input line 32.
+(pdftex.def)             Requested size: 310.4979pt x 119.26158pt.
+ [1
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--25
+{C:/Users/juan_/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./images/train_df.png>]
+<images/test_df.png, id=13, 760.34062pt x 423.08063pt>
+File: images/test_df.png Graphic file (type png)
+<use images/test_df.png>
+Package pdftex.def Info: images/test_df.png  used on input line 40.
+(pdftex.def)             Requested size: 310.4979pt x 172.77342pt.
+<images/train_ydata.png, id=14, 760.34062pt x 375.65344pt>
+File: images/train_ydata.png Graphic file (type png)
+<use images/train_ydata.png>
+Package pdftex.def Info: images/train_ydata.png  used on input line 48.
+(pdftex.def)             Requested size: 310.4979pt x 153.40558pt.
+ [2 <./images/descrip_train.png> <./images/test_df.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 55--58
 
  []
 
-[1
-
-{C:/Users/juan_/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Overfull \hbox (3.94519pt too wide) in paragraph at lines 38--39
+[3 <./images/train_ydata.png>]
+Overfull \hbox (3.94519pt too wide) in paragraph at lines 70--71
 \OT1/cmr/m/n/10 de: http://ecuadoruniversitario.com/ciencia-y-tecnologia/isamu-akasaki-hiroshi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
-
- []
-
-
-Overfull \hbox (3.94519pt too wide) in paragraph at lines 41--42
+Overfull \hbox (3.94519pt too wide) in paragraph at lines 73--74
 \OT1/cmr/m/n/10 de: http://ecuadoruniversitario.com/ciencia-y-tecnologia/isamu-akasaki-hiroshi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-
- []
-
-
-Overfull \hbox (22.7969pt too wide) in paragraph at lines 43--44
+Overfull \hbox (22.7969pt too wide) in paragraph at lines 75--76
 \OT1/cmr/m/n/10 creadores del led azul. Re-cu-per-ado de: https://www.agenciasinc.es/Noticias/Premio-
  []
 
-[2] (report.aux)
+[4] (report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 497 strings out of 474485
- 10472 string characters out of 5743734
- 1931542 words of memory out of 5000000
- 22850 multiletter control sequences out of 15000+600000
+ 1433 strings out of 474485
+ 25198 string characters out of 5743734
+ 1930542 words of memory out of 5000000
+ 23749 multiletter control sequences out of 15000+600000
  562016 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,6n,50p,659b,206s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,6n,65p,659b,263s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on report.pdf (2 pages, 70248 bytes).
+Output written on report.pdf (4 pages, 147976 bytes).
 PDF statistics:
- 29 PDF objects out of 1000 (max. 8388607)
+ 44 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
