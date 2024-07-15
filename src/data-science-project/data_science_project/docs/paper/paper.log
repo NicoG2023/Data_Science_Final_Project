@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.7.13)  15 JUL 2024 17:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.7.13)  15 JUL 2024 17:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -206,9 +206,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--121
 File: images/comparison.jpg Graphic file (type jpg)
 <use images/comparison.jpg>
 Package pdftex.def Info: images/comparison.jpg  used on input line 143.
-(pdftex.def)             Requested size: 455.2979pt x 295.00945pt.
+(pdftex.def)             Requested size: 252.94499pt x 163.88908pt.
 
-Overfull \hbox (209.57979pt too wide) in paragraph at lines 143--144
+Overfull \hbox (7.22688pt too wide) in paragraph at lines 143--144
  [] 
  []
 
@@ -216,16 +216,13 @@ Overfull \hbox (209.57979pt too wide) in paragraph at lines 143--144
 File: images/comparisonxg.jpg Graphic file (type jpg)
 <use images/comparisonxg.jpg>
 Package pdftex.def Info: images/comparisonxg.jpg  used on input line 151.
-(pdftex.def)             Requested size: 455.2979pt x 291.0814pt.
+(pdftex.def)             Requested size: 252.94499pt x 161.71048pt.
 
-Overfull \hbox (209.57979pt too wide) in paragraph at lines 151--152
+Overfull \hbox (7.22688pt too wide) in paragraph at lines 151--152
  [] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2 <./images/comparison.jpg> <./images/comparisonxg.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 180--181
 \T1/ptm/m/n/8 Avail-able: $\T1/pcr/m/n/8 https : / / www . kaggle . com / competitions /
  []
@@ -256,9 +253,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the US letter (8.5in X 11in) paper size.
 
-[3
-
-] (paper.aux)
+[2 <./images/comparison.jpg> <./images/comparisonxg.jpg>] (paper.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -273,9 +268,9 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  57i,10n,65p,1949b,317s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (3 pages, 294673 bytes).
+Output written on paper.pdf (2 pages, 294149 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
+ 67 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
