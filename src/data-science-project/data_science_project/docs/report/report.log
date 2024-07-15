@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.7.13)  15 JUL 2024 18:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.7.13)  15 JUL 2024 18:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -106,11 +106,11 @@ File: images/train_df.png Graphic file (type png)
 <use images/train_df.png>
 Package pdftex.def Info: images/train_df.png  used on input line 45.
 (pdftex.def)             Requested size: 310.4979pt x 77.69493pt.
-<images/descrip_train.png, id=12, 774.64406pt x 298.11375pt>
+<images/descrip_train.png, id=12, 856.70062pt x 304.13625pt>
 File: images/descrip_train.png Graphic file (type png)
 <use images/descrip_train.png>
 Package pdftex.def Info: images/descrip_train.png  used on input line 53.
-(pdftex.def)             Requested size: 310.4979pt x 119.49356pt.
+(pdftex.def)             Requested size: 310.4979pt x 110.22684pt.
 <images/test_df.png, id=13, 760.34062pt x 423.08063pt>
 File: images/test_df.png Graphic file (type png)
 <use images/test_df.png>
@@ -123,11 +123,11 @@ File: images/train_ydata.png Graphic file (type png)
 Package pdftex.def Info: images/train_ydata.png  used on input line 69.
 (pdftex.def)             Requested size: 310.4979pt x 183.09746pt.
  [3 <./images/test_df.png> <./images/train_ydata.png>]
-<images/output.png, id=25, 758.835pt x 595.5048pt>
+<images/output.png, id=25, 750.1626pt x 595.5048pt>
 File: images/output.png Graphic file (type png)
 <use images/output.png>
 Package pdftex.def Info: images/output.png  used on input line 93.
-(pdftex.def)             Requested size: 310.4979pt x 243.66788pt.
+(pdftex.def)             Requested size: 310.4979pt x 246.48474pt.
  [4 <./images/output.png>]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 112.
@@ -185,7 +185,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  57i,6n,65p,906b,330s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\juan_\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on report.pdf (8 pages, 522195 bytes).
+Output written on report.pdf (8 pages, 525622 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
