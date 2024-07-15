@@ -1,58 +1,190 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{float} 
 
-
-
-\title{Informe}
-\author{Wendy Tamayo }
-\date{May 2019}
-
+\title{Grupo Bimbo Inventory Demand \\Data Science Report }
+\author{Juan Manuel Serrano Rodriguez, Nicolas Guevara Herran,\\ Giovanny Esteban Moreno Rondon}
+\date{July 2024}
 
 \begin{document}
 
 \maketitle
 
-\section{Tema}
-Laureado: Isamu Akasaki (Japón), Hiroshi Amano (Japón), Shuji Nakamura (Japón, Estados Unidos de América).\\
-País: Japón y Estados Unidos de América
-\subsection{Isamu Akasaki }
-Nació el 30 de enero 1929 en Chiran, Japón. En 1952, se graduó de la Facultad de Ciencias por la Universidad de Kioto y comenzó a trabajar en la Kobe Kogyo Corporation, que forma parte de Fujitsu. En 1959, ingresó a la Universidad de Nagoya como investigador asociado en la Facultad de Ingeniería y como profesor asistente a partir de 1964 tras doctorarse. Fue reconocido por inventar el nitruro de galio brillante (GaN) azul unión p-n LED en 1989 y, posteriormente, el alto brillo azul GaN LED. Comenzó a trabajar en GaN-based blue LEDs en la década de 1960 en el Matsushita Research Institute de Tokio, Inc. (MRIT). Nombrado en 1981 catedrático de la Facultad de Ingeniería de la Universidad de Nagoya, puesto en el que se retiró en 1992.
-\subsection{Hiroshi Amano}
-Nació el 11 de septiembre de 1960 en Hamamatsu, (Japón). Doctorado en ingeniería en 1989 por la Universidad de Nagoya, donde es catedrático. Graduado en 1983 del Departamento de Electrónica de la Facultad de Ingeniería por la Universidad de Nagoya. En 1982, se unió al grupo de Isamu Akasaki. Investigador asociado de la Universidad de Nagoya de 1988 a 1992, asistente, asociado y catedrático de la Universidad Meijo entre 1992 y 2010 y catedrático de la Universidad de Nagoya. Galardonado con el Premio Nobel 2014 de Física, junto con Isamu Akasaki y Shuji Nakamura por su invención de las luces azules LED.
-\subsection{Shuji Nakamura}
-Nació el 22 de mayo de 1954 en Seto, Ehime, (Japón). Graduado en Ingeniería electrónica en la Universidad de Tokushima en 1977, logró un master's degree en la misma materia en 1979. Inventó el primer LED GaN de alto brillo. También los LED (Light Emitting Diode) o diodos emisores de luz azules (dando paso al desarrollo de los LED blancos), desarrollando además el LED ultravioleta que permite la esterilización de agua y el láser azul, con aplicaciones en la optoelectrónica y el almacenamiento de datos. En 2006 fue galardonado con el Premio de Tecnología del Milenio por el desarrollo de nuevas y revolucionarias fuentes lumínicas, los diodos luminosos (LED) azul, verde y blanco, y la luz láser azul. 
+\section{Gathering Data and Exploration}
+\subsection{Kaggle and Web Scrapping}
+The dataset for this competition was primarily sourced from Kaggle. Additionally, we utilized web scraping techniques to augment our data with external variables. Specifically, we collected biweekly inflation rates and consumer confidence indices from an API. These additional variables were gathered for the period from March 31st to June 1st, 2016.
 
-\section{Características del premio Nobel}
-Invención de diodos emisores de luz azul que han permitido el desarrollo de fuentes de luz blanca y brillante de bajo consumo.\\\\
-1) Su invención ha revolucionado la iluminación de las dos últimas décadas al permitir generar una luz blanca, brillante y barata.\\
-2) Permitió crear lámparas led blancas, que emiten una luz brillante, son de larga duración y alta eficiencia energética
-\section{Descripción}
-Los científicos japoneses Isamu Akasaki, Hiroshi Amano y Shuji Nakamura han conseguido el premio Nobel de Física 2014 por haber inventado el led azul, una nueva fuente de luz eficiente, duradera y amigable con el medioambiente. 
-Su invento permitió crear lámparas led blancas, que emiten una luz brillante, son de larga duración y alta eficiencia energética. Constantemente están mejorando, con mayores flujos luminosos (medidos en lúmenes) por unidad de energía eléctrica de entrada (medido en vatios). El registro más reciente es poco más de 300 lm/ W, en comparación con los 16 de las bombillas regulares y los cerca de 70 de las lámparas fluorescentes.
-\section{Procedimiento}
-Cuando Akasaki, Amano y Nakamura produjeron haces brillantes de luz azul en semiconductores a principio de la década de 1990, desencadenaron una transformación fundamental en la tecnología de iluminación. Los diodos verdes y rojos ya se conocían desde hacía tiempo, pero sin el componte azul, las lámparas blancas no se podían crear. La invención del led azul tiene solo 20 años, pero ya ha contribuido a crear luz blanca de una forma nueva beneficiándonos a todos.
+\subsection{Data Exploration}
 
-\section{Conclusión}
-El premio nobel otorgado a los autores mencionados anteriormente ha sido para dar reconocimiento a la gran labor que ellos hicieron por la creación de un nuevo invento de bajo consumo. La invención del led azul tiene solo 20 años, pero ya ha contribuido a crear luz blanca de una forma nueva beneficiándonos a todos.
+Initial data exploration involved understanding the structure and summary statistics of the dataset. Key columns include:
+
+\begin{itemize}
+    \item Week (Semana)
+    \item Sales Depot ID (Agencia\_ID)
+    \item Sales Channel ID (Canal\_ID)
+    \item Route ID (Ruta\_SAK)
+    \item Client ID (Cliente\_ID)
+    \item Client Name (NombreCliente)
+    \item Product ID (Producto\_ID)
+    \item Product Name (NombreProducto)
+    \item Sales Units This Week (Venta\_uni\_hoy)
+    \item Sales This Week in Pesos (Venta\_hoy)
+    \item Returns Units Next Week (Dev\_uni\_proxima)
+    \item Returns Next Week in Pesos (Dev\_proxima)
+    \item Adjusted Demand (Demanda\_uni\_equil)
+\end{itemize}
+
+Exploratory data analysis (EDA) was conducted to identify patterns, trends, and anomalies within the data. 
+
+To understand the structure and characteristics of our dataset, we employed various graphical representations and utilized the YData Profile Report. This step helped us identify the distribution of our data, detect any anomalies, and gain insights into potential relationships between variables.
+
+\begin{figure}[H]
+\begin{center}
+\centering
+\includegraphics[width=0.9\textwidth]{images/train_df.png}
+\caption{Train Dataframe}
+\end{center}
+\end{figure}
+
+\begin{figure}[H] 
+\begin{center}
+\centering
+\includegraphics[width=0.9\textwidth]{images/descrip_train.png}
+\caption{Description Train Dataframe}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\centering
+\includegraphics[width=0.9\textwidth]{images/test_df.png}
+\caption{Test Dataframe}
+\end{center}
+\end{figure}
+
+\begin{figure}[H] 
+\begin{center}
+\centering
+\includegraphics[width=0.9\textwidth]{images/train_ydata.png}
+\caption{Ydata Profile Report Dataframe}
+\end{center}
+\end{figure}
+    
+
+\section{Data Preprocessing}
+Data preprocessing is a critical step to ensure data quality and prepare it for modeling.
+\begin{itemize}
+    \item Data Cleaning: Missing values were handled, and duplicate records were removed. Outliers were identified and treated appropriately.
+    \item Data Integration: The external economic indicators (bi-weekly inflation and consumer confidence index) were integrated with the primary dataset based on the corresponding time periods.
+    \item Data Transformation: Features were transformed to appropriate data types to facilitate smooth pipeline operations.
+\end{itemize}
+
+\section{Feature Engineering}
+Feature engineering involved creating new variables to capture additional information and improve model performance.
+\begin{itemize}
+    \item Temporal Features: Lagged variables were created to capture temporal dependencies in sales and demand.
+    \item Economic Indicators: The bi-weekly inflation rate and consumer confidence index were added as features to capture the impact of economic conditions on product demand.
+    \item Categorical Encoding: Categorical variables were converted to numerical format using one-hot encoding or label encoding.
+
+\begin{figure}[H] 
+    \begin{center}
+    \centering
+    \includegraphics[width=0.9\textwidth]{images/output.png}
+    \caption{Heatmap correlation of the features}
+    \end{center}
+\end{figure}    
+
+\end{itemize}
+
+\section{Model Selection}
+
+Two machine learning models were selected for this study: XGBoost and Random Forest.
+\begin{itemize}
+    \item XGBoost: A gradient boosting framework known for its high performance and ability to handle complex interactions.
+    \item Random Forest: An ensemble learning method that constructs multiple decision trees for improved robustness.
+\end{itemize}
+
+\section{Model Training}
+The selected models were trained on the processed dataset.
+
+\begin{itemize}
+    \item $XGBoost$ Training: The XGBoost model was trained with parameters such as $n\_estimators=200$, $max\_depth=8$, $learning\_rate=0.2$, $subsample=0.9$, $colsample\_bytree=0.8$, $n\_jobs=-1$, and $random\_state=42$.
+    \item $Random$ $Forest$ Training: The Random Forest model was trained with parameters including $n\_estimators=110$, $min\_samples\_split=10$, $min\_samples\_leaf=5$, $n\_jobs=-1$, and $random\_state=42$.
+\end{itemize}
+
+\section{Model Evaluation}
+Model performance was evaluated using root mean squared error (RMSE) as the primary metric. Additional metrics such as precision, recall, and F1-score were computed to provide a comprehensive evaluation.
+\begin{itemize}
+    \item XGBoost Performance:
+  
+    \begin{figure}[H] 
+        \begin{center}
+        \centering
+        \includegraphics[width=0.8\textwidth]{images/comparisonxg.jpg}
+        \caption{Heatmap correlation of the features}
+        \end{center}
+    \end{figure} 
+
+    \item Random Forest Performance:
+    
+    \begin{figure}[H] 
+        \begin{center}
+        \centering
+        \includegraphics[width=0.8\textwidth]{images/comparison.jpg}
+        \caption{Actual vs Predict Adjusted Demand}
+        \end{center}
+    \end{figure} 
+
+\end{itemize}
+
+\section{Business Questions}
+The study aimed to address several business questions related to inventory management and demand forecasting:
+\begin{itemize}
+    \item What are our best and worst customers?
+    
+    \begin{figure}[H] 
+        \begin{center}
+        \centering
+        \includegraphics[width=0.8\textwidth]{images/quest1.png}
+        \caption{Business Question 1}
+        \end{center}
+    \end{figure} 
+
+    \item What is the relationship between sales growth rates (1 and 2) and adjusted demand? 
+
+    \begin{figure}[H] 
+        \begin{center}
+        \centering
+        \includegraphics[width=0.8\textwidth]{images/quest2.png}
+        \caption{Business Question 2}
+        \end{center}
+    \end{figure} 
+
+    \item How are our sales going against the returns, and our adjusted demand?
+
+    % \begin{figure}[H] 
+    %     \begin{center}
+    %     \centering
+    %     \includegraphics[width=0.7\textwidth]{images/quest2.png}
+    %     \caption{Business Question 3}
+    %     \end{center}
+    % \end{figure}
 
 
+    \item What are our most used routes?
 
-\section{Fuentes de consulta}
-ecuadoruniversitario.com  (2014). Quito – Ecuador. Isamu Akasaki, Hiroshi Amano y Shuji Nakamura reciben el Premio Nobel de Física 2014.  Recuperado de: http://ecuadoruniversitario.com/ciencia-y-tecnologia/isamu-akasaki-hiroshi-amano-y-shuji-nakamura-reciben-el-premio-nobel-de-fisica-2014/\\
+    \begin{figure}[H] 
+        \begin{center}
+        \centering
+        \includegraphics[width=0.8\textwidth]{images/quest4.png}
+        \caption{Business Question 3}
+        \end{center}
+    \end{figure}
 
-SINC. (2014). Madrid – España. Premio Nobel de Física 2014 para los creadores del led azul. Recuperado de: https://www.agenciasinc.es/Noticias/Premio-Nobel-de-Fisica-2014-para-los-creadores-del-led-azul 
+\end{itemize}
 
-
-
-
-
-
-
-
-
-
-
-
-
+\section{Conclusions}
+This study demonstrates the effectiveness of machine learning models in forecasting product demand for Grupo Bimbo. The XGBoost model outperformed the Random Forest model, offering more accurate predictions. Integrating external economic indicators enhanced the model's accuracy. These findings can help improve inventory management, reduce waste, and optimize resource allocation. Future work could explore additional features and real-time model implementation for continuous insights.
 
 \end{document}
