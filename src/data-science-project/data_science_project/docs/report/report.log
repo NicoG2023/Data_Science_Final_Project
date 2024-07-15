@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.7.13)  15 JUL 2024 17:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.7.13)  15 JUL 2024 18:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -101,27 +101,27 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {C:/Users/juan_/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-<images/train_df.png, id=10, 824.32968pt x 203.25937pt>
+<images/train_df.png, id=10, 836.3747pt x 209.28188pt>
 File: images/train_df.png Graphic file (type png)
 <use images/train_df.png>
 Package pdftex.def Info: images/train_df.png  used on input line 45.
-(pdftex.def)             Requested size: 310.4979pt x 76.56013pt.
-<images/descrip_train.png, id=12, 776.14969pt x 298.11375pt>
+(pdftex.def)             Requested size: 310.4979pt x 77.69493pt.
+<images/descrip_train.png, id=12, 774.64406pt x 298.11375pt>
 File: images/descrip_train.png Graphic file (type png)
 <use images/descrip_train.png>
 Package pdftex.def Info: images/descrip_train.png  used on input line 53.
-(pdftex.def)             Requested size: 310.4979pt x 119.26158pt.
+(pdftex.def)             Requested size: 310.4979pt x 119.49356pt.
 <images/test_df.png, id=13, 760.34062pt x 423.08063pt>
 File: images/test_df.png Graphic file (type png)
 <use images/test_df.png>
 Package pdftex.def Info: images/test_df.png  used on input line 61.
 (pdftex.def)             Requested size: 310.4979pt x 172.77342pt.
  [2 <./images/train_df.png> <./images/descrip_train.png>]
-<images/train_ydata.png, id=19, 760.34062pt x 375.65344pt>
+<images/train_ydata.png, id=19, 642.14906pt x 378.66469pt>
 File: images/train_ydata.png Graphic file (type png)
 <use images/train_ydata.png>
 Package pdftex.def Info: images/train_ydata.png  used on input line 69.
-(pdftex.def)             Requested size: 310.4979pt x 153.40558pt.
+(pdftex.def)             Requested size: 310.4979pt x 183.09746pt.
  [3 <./images/test_df.png> <./images/train_ydata.png>]
 <images/output.png, id=25, 758.835pt x 595.5048pt>
 File: images/output.png Graphic file (type png)
@@ -185,7 +185,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  57i,6n,65p,670b,330s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\juan_\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on report.pdf (8 pages, 522297 bytes).
+Output written on report.pdf (8 pages, 522329 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
