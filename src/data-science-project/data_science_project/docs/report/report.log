@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.7.13)  15 JUL 2024 16:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.7.13)  15 JUL 2024 16:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -135,7 +135,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 112.
 
 Overfull \hbox (24.01926pt too wide) in paragraph at lines 112--113
-\OT1/cmr/m/n/10 such as $\OML/cmm/m/it/10 n[]estimators \OT1/cmr/m/n/10 = 100$, $\OML/cmm/m/it/10 max[]depth \OT1/cmr/m/n/10 = 8$, $\OML/cmm/m/it/10 learning[]rate \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 1$, $\OML/cmm/m/it/10 subsample \OT1/cmr/m/n/10 =
+\OT1/cmr/m/n/10 such as $\OML/cmm/m/it/10 n[]estimators \OT1/cmr/m/n/10 = 200$, $\OML/cmm/m/it/10 max[]depth \OT1/cmr/m/n/10 = 8$, $\OML/cmm/m/it/10 learning[]rate \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 2$, $\OML/cmm/m/it/10 subsample \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (55.52763pt too wide) in paragraph at lines 113--114
+\OT1/cmr/m/n/10 ram-e-ters in-clud-ing $\OML/cmm/m/it/10 n[]estimators \OT1/cmr/m/n/10 = 110$, $\OML/cmm/m/it/10 min[]samples[]split \OT1/cmr/m/n/10 = 10$, $\OML/cmm/m/it/10 min[]samples[]leaf \OT1/cmr/m/n/10 =
  []
 
 <images/quest1.png, id=30, 618.6312pt x 395.3169pt>
@@ -144,12 +149,12 @@ File: images/quest1.png Graphic file (type png)
 Package pdftex.def Info: images/quest1.png  used on input line 131.
 (pdftex.def)             Requested size: 310.4979pt x 198.41196pt.
 [5]
-<images/quest2.png, id=35, 620.7993pt x 395.3169pt>
+<images/quest2.png, id=36, 620.7993pt x 395.3169pt>
 File: images/quest2.png Graphic file (type png)
 <use images/quest2.png>
 Package pdftex.def Info: images/quest2.png  used on input line 141.
 (pdftex.def)             Requested size: 310.4979pt x 197.7243pt.
-<images/quest4.png, id=36, 620.7993pt x 410.4936pt>
+<images/quest4.png, id=37, 620.7993pt x 410.4936pt>
 File: images/quest4.png Graphic file (type png)
 <use images/quest4.png>
 Package pdftex.def Info: images/quest4.png  used on input line 162.
@@ -163,15 +168,15 @@ L3 programming layer <2024-01-04>
 Here is how much of TeX's memory you used:
  1464 strings out of 474485
  25965 string characters out of 5743734
- 1931542 words of memory out of 5000000
+ 1932542 words of memory out of 5000000
  23779 multiletter control sequences out of 15000+600000
  562351 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,6n,65p,670b,330s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\juan_\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on report.pdf (7 pages, 353309 bytes).
+ <C:\Users\juan_\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on report.pdf (7 pages, 362580 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
+ 78 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
