@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.7.13)  15 JUL 2024 12:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.7.13)  15 JUL 2024 16:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -123,33 +123,39 @@ File: images/train_ydata.png Graphic file (type png)
 Package pdftex.def Info: images/train_ydata.png  used on input line 69.
 (pdftex.def)             Requested size: 310.4979pt x 153.40558pt.
  [3 <./images/test_df.png> <./images/train_ydata.png>]
+<images/output.png, id=25, 758.835pt x 595.5048pt>
+File: images/output.png Graphic file (type png)
+<use images/output.png>
+Package pdftex.def Info: images/output.png  used on input line 93.
+(pdftex.def)             Requested size: 310.4979pt x 243.66788pt.
+ [4 <./images/output.png>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 103.
+(Font)              <7> on input line 112.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 103.
+(Font)              <5> on input line 112.
 
-Overfull \hbox (24.01926pt too wide) in paragraph at lines 103--104
+Overfull \hbox (24.01926pt too wide) in paragraph at lines 112--113
 \OT1/cmr/m/n/10 such as $\OML/cmm/m/it/10 n[]estimators \OT1/cmr/m/n/10 = 100$, $\OML/cmm/m/it/10 max[]depth \OT1/cmr/m/n/10 = 8$, $\OML/cmm/m/it/10 learning[]rate \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 1$, $\OML/cmm/m/it/10 subsample \OT1/cmr/m/n/10 =
  []
 
-[4] [5] (report.aux)
+[5] [6] (report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 1438 strings out of 474485
- 25318 string characters out of 5743734
- 1932542 words of memory out of 5000000
- 23752 multiletter control sequences out of 15000+600000
+ 1445 strings out of 474485
+ 25485 string characters out of 5743734
+ 1933542 words of memory out of 5000000
+ 23759 multiletter control sequences out of 15000+600000
  562659 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,65p,670b,261s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,6n,65p,670b,330s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\juan_\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/juan_/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on report.pdf (5 pages, 175636 bytes).
+Output written on report.pdf (6 pages, 303114 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
+ 67 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
