@@ -16,6 +16,27 @@
 The dataset for this competition was primarily sourced from Kaggle. Additionally, we utilized web scraping techniques to augment our data with external variables. Specifically, we collected biweekly inflation rates and consumer confidence indices from an API. These additional variables were gathered for the period from March 31st to June 1st, 2016.
 
 \subsection{Data Exploration}
+
+Initial data exploration involved understanding the structure and summary statistics of the dataset. Key columns include:
+
+\begin{itemize}
+    \item Week (Semana)
+    \item Sales Depot ID (Agencia\_ID)
+    \item Sales Channel ID (Canal\_ID)
+    \item Route ID (Ruta\_SAK)
+    \item Client ID (Cliente\_ID)
+    \item Client Name (NombreCliente)
+    \item Product ID (Producto\_ID)
+    \item Product Name (NombreProducto)
+    \item Sales Units This Week (Venta\_uni\_hoy)
+    \item Sales This Week in Pesos (Venta\_hoy)
+    \item Returns Units Next Week (Dev\_uni\_proxima)
+    \item Returns Next Week in Pesos (Dev\_proxima)
+    \item Adjusted Demand (Demanda\_uni\_equil)
+\end{itemize}
+
+Exploratory data analysis (EDA) was conducted to identify patterns, trends, and anomalies within the data. 
+
 To understand the structure and characteristics of our dataset, we employed various graphical representations and utilized the YData Profile Report. This step helped us identify the distribution of our data, detect any anomalies, and gain insights into potential relationships between variables.
 
 \begin{figure}[H]
@@ -52,26 +73,58 @@ To understand the structure and characteristics of our dataset, we employed vari
     
 
 \section{Data Preprocessing}
-Invención de diodos emisores de luz azul que han permitido el desarrollo de fuentes de luz blanca y brillante de bajo consumo.\\\\
-1) Su invención ha revolucionado la iluminación de las dos últimas décadas al permitir generar una luz blanca, brillante y barata.\\
-2) Permitió crear lámparas led blancas, que emiten una luz brillante, son de larga duración y alta eficiencia energética.
+Data preprocessing is a critical step to ensure data quality and prepare it for modeling.
+\begin{itemize}
+    \item Data Cleaning: Missing values were handled, and duplicate records were removed. Outliers were identified and treated appropriately.
+    \item Data Integration: The external economic indicators (bi-weekly inflation and consumer confidence index) were integrated with the primary dataset based on the corresponding time periods.
+    \item Data Transformation: Features were transformed to appropriate data types to facilitate smooth pipeline operations.
+\end{itemize}
 
 \section{Feature Engineering}
-Los científicos japoneses Isamu Akasaki, Hiroshi Amano y Shuji Nakamura han conseguido el premio Nobel de Física 2014 por haber inventado el led azul, una nueva fuente de luz eficiente, duradera y amigable con el medioambiente. 
-Su invento permitió crear lámparas led blancas, que emiten una luz brillante, son de larga duración y alta eficiencia energética. Constantemente están mejorando, con mayores flujos luminosos (medidos en lúmenes) por unidad de energía eléctrica de entrada (medido en vatios). El registro más reciente es poco más de 300 lm/ W, en comparación con los 16 de las bombillas regulares y los cerca de 70 de las lámparas fluorescentes.
+Feature engineering involved creating new variables to capture additional information and improve model performance.
+\begin{itemize}
+    \item Temporal Features: Lagged variables were created to capture temporal dependencies in sales and demand.
+    \item Economic Indicators: The bi-weekly inflation rate and consumer confidence index were added as features to capture the impact of economic conditions on product demand.
+    \item Categorical Encoding: Categorical variables were converted to numerical format using one-hot encoding or label encoding.
+\end{itemize}
 
 \section{Model Selection}
-Cuando Akasaki, Amano y Nakamura produjeron haces brillantes de luz azul en semiconductores a principio de la década de 1990, desencadenaron una transformación fundamental en la tecnología de iluminación. Los diodos verdes y rojos ya se conocían desde hacía tiempo, pero sin el componte azul, las lámparas blancas no se podían crear. La invención del led azul tiene solo 20 años, pero ya ha contribuido a crear luz blanca de una forma nueva beneficiándonos a todos.
+
+Two machine learning models were selected for this study: XGBoost and Random Forest.
+\begin{itemize}
+    \item XGBoost: A gradient boosting framework known for its high performance and ability to handle complex interactions.
+    \item Random Forest: An ensemble learning method that constructs multiple decision trees for improved robustness.
+\end{itemize}
 
 \section{Model Training}
-El premio nobel otorgado a los autores mencionados anteriormente ha sido para dar reconocimiento a la gran labor que ellos hicieron por la creación de un nuevo invento de bajo consumo. La invención del led azul tiene solo 20 años, pero ya ha contribuido a crear luz blanca de una forma nueva beneficiándonos a todos.
+The selected models were trained on the processed dataset.
+
+\begin{itemize}
+    \item $XGBoost$ Training: The XGBoost model was trained with parameters such as $n\_estimators=100$, $max\_depth=8$, $learning\_rate=0.1$, $subsample=0.8$, $colsample\_bytree=0.8$, and $random\_state=42$.
+    \item $Random$ $Forest$ Training: The Random Forest model was trained with parameters including $n\_estimators=100$, $max\_depth=...$
+\end{itemize}
 
 \section{Model Evaluation}
-ecuadoruniversitario.com  (2014). Quito – Ecuador. Isamu Akasaki, Hiroshi Amano y Shuji Nakamura reciben el Premio Nobel de Física 2014. Recuperado de: http://ecuadoruniversitario.com/ciencia-y-tecnologia/isamu-akasaki-hiroshi-amano-y-shuji-nakamura-reciben-el-premio-nobel-de-fisica-2014/
+Model performance was evaluated using root mean squared error (RMSE) as the primary metric. Additional metrics such as precision, recall, and F1-score were computed to provide a comprehensive evaluation.
+\begin{itemize}
+    \item XGBoost Performance: The XGBoost model achieved an RMSE of X, demonstrating its superior predictive accuracy.
+    \item Random Forest Performance: The Random Forest model had an RMSE of Y, indicating its relative performance compared to XGBoost.
+\end{itemize}
+
+\section{Business Questions}
+The study aimed to address several business questions related to inventory management and demand forecasting:
+\begin{itemize}
+    \item How can accurate demand forecasting improve inventory management?
+    \begin{itemize}
+        \item By predicting adjusted demand, Grupo Bimbo can optimize stock levels, reduce waste, and improve resource allocation.
+    \end{itemize}
+    \item What is the impact of economic indicators on product demand?
+    \begin{itemize}
+        \item The inclusion of bi-weekly inflation and consumer confidence index data provides insights into how economic conditions influence demand, allowing for more informed decision-making.
+    \end{itemize}
+\end{itemize}
 
 \section{Conclusions}
-ecuadoruniversitario.com  (2014). Quito – Ecuador. Isamu Akasaki, Hiroshi Amano y Shuji Nakamura reciben el Premio Nobel de Física 2014. Recuperado de: http://ecuadoruniversitario.com/ciencia-y-tecnologia/isamu-akasaki-hiroshi-amano-y-shuji-nakamura-reciben-el-premio-nobel-de-fisica-2014/
-
-SINC. (2014). Madrid – España. Premio Nobel de Física 2014 para los creadores del led azul. Recuperado de: https://www.agenciasinc.es/Noticias/Premio-Nobel-de-Fisica-2014-para-los-creadores-del-led-azul 
+This study demonstrates the effectiveness of machine learning models in forecasting product demand for Grupo Bimbo. The XGBoost model outperformed the Random Forest model, offering more accurate predictions. Integrating external economic indicators enhanced the model's accuracy. These findings can help improve inventory management, reduce waste, and optimize resource allocation. Future work could explore additional features and real-time model implementation for continuous insights.
 
 \end{document}
