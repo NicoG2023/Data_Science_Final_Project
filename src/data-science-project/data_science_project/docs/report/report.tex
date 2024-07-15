@@ -116,8 +116,26 @@ The selected models were trained on the processed dataset.
 \section{Model Evaluation}
 Model performance was evaluated using root mean squared error (RMSE) as the primary metric. Additional metrics such as precision, recall, and F1-score were computed to provide a comprehensive evaluation.
 \begin{itemize}
-    \item XGBoost Performance: The XGBoost model achieved an RMSE of X, demonstrating its superior predictive accuracy.
-    \item Random Forest Performance: The Random Forest model had an RMSE of Y, indicating its relative performance compared to XGBoost.
+    \item XGBoost Performance:
+  
+    \begin{figure}[H] 
+        \begin{center}
+        \centering
+        \includegraphics[width=0.9\textwidth]{images/comparisonxg.jpg}
+        \caption{Heatmap correlation of the features}
+        \end{center}
+    \end{figure} 
+
+    \item Random Forest Performance:
+    
+    \begin{figure}[H] 
+        \begin{center}
+        \centering
+        \includegraphics[width=0.9\textwidth]{images/comparison.jpg}
+        \caption{Actual vs Predict Adjusted Demand}
+        \end{center}
+    \end{figure} 
+
 \end{itemize}
 
 \section{Business Questions}

@@ -16,6 +16,8 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{float} 
+\usepackage{graphicx}
 \usepackage{url}
 
 % The following packages can be found on http:\\www.ctan.org
@@ -133,7 +135,23 @@ Model performance was assessed using the root mean squared error (RMSE) to measu
 
 
 \section{RESULTS}
-The performance of the XGBoost and Random Forest models was evaluated based on the RMSE. The XGBoost model achieved an RMSE of X, indicating better predictive accuracy compared to the Random Forest model, which had an RMSE of Y. The superior performance of XGBoost can be attributed to its ability to handle complex interactions between features and its robustness to overfitting. The inclusion of external economic indicators, such as bi-weekly inflation rates and the consumer confidence index, further enhanced the model's predictive capabilities. Detailed performance metrics, including precision, recall, and F1-score, were also computed to provide a comprehensive evaluation of the models.
+The performance of the XGBoost and Random Forest models was evaluated based on the RMSE. The Random Forest model achieved an RMSE of X, indicating better predictive accuracy compared to the XGBoost model, which had an RMSE of Y. The superior performance of Random Forest can be attributed to its ability to handle high-dimensional data and its robustness to overfitting. The inclusion of external economic indicators, such as bi-weekly inflation rates and the consumer confidence index, further enhanced the model's predictive capabilities.
+
+\begin{figure}[H] 
+        \begin{center}
+        \centering
+        \includegraphics[width=0.9\textwidth]{images/comparison.jpg}
+        \caption{Actual vs Predict Adjusted Demand}
+        \end{center}
+\end{figure} 
+
+\begin{figure}[H] 
+        \begin{center}
+        \centering
+        \includegraphics[width=0.9\textwidth]{images/comparisonxg.jpg}
+        \caption{Actual vs Predict Adjusted Demand}
+        \end{center}
+\end{figure} 
 
 
 \section{CONCLUSIONS}
