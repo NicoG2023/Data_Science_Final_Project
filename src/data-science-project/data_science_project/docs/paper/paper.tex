@@ -111,12 +111,11 @@ The preprocessing steps undertaken in this study involved several key processes 
         \item Data Transformation:
         \begin{itemize}
                 \item Normalization and Scaling: Numerical features were normalized and scaled to ensure all features contribute equally to the model. StandardScaler from sklearn was used to transform features to have zero mean and unit variance.
-                \item Encoding Categorical Variables: Categorical variables were converted into numerical values using one-hot encoding for nominal variables and label encoding for ordinal variables.
         \end{itemize}
         
         \item \textbf{Feature Engineering}: Creating new features such as lagged variables to capture temporal dependencies and integrating external economic indicators.
         \begin{itemize}
-                \item Temporal Features: New temporal features such as the day of the week, month, and lag features for past sales data were created to capture temporal dependencies and seasonality in the data.
+                \item Temporal Features: Change to week features to datetime format and put as index.
                 \item Interaction Features: Interaction features between different variables were created to capture complex relationships within the data.
                 \begin{itemize}
                         \item \textbf{Sales\_Growth\_Rate\_1}: Demand for the same product in the previous week.
