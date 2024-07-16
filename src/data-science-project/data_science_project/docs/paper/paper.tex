@@ -118,6 +118,10 @@ The preprocessing steps undertaken in this study involved several key processes 
         \begin{itemize}
                 \item Temporal Features: New temporal features such as the day of the week, month, and lag features for past sales data were created to capture temporal dependencies and seasonality in the data.
                 \item Interaction Features: Interaction features between different variables were created to capture complex relationships within the data.
+                \begin{itemize}
+                        \item \textbf{Sales\_Growth\_Rate\_1}: Demand for the same product in the previous week.
+                        \item \textbf{Sales\_Growth\_Rate\_2}: Demand for the same product two weeks ago.   
+                \end{itemize}
                 \item External Economic Indicators: The bi-weekly inflation rate and consumer confidence index were merged with the primary dataset to capture the economic conditions impacting product demand.
         \end{itemize}
 \end{itemize}
