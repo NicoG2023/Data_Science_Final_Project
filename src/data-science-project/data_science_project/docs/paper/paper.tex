@@ -147,31 +147,35 @@ Two machine learning models were chosen for this study based on their ability to
 \end{itemize}
 
 \subsection{Evaluation}
-Model performance was evaluated using the root mean squared error (RMSE) as the primary metric. RMSE is a standard way to measure the error of a model in predicting quantitative data. Additionally, other metrics such as R-squared, Mean Absolute Error (MAE), and Mean Squared Error (MSE) were also considered for a comprehensive evaluation.
+In this section, we evaluate and compare the performance of two machine learning models, Random Forest and XGBoost, on the task of predicting adjusted demand. We use metrics such as Mean Squared Error (MSE) and R-squared (R²) to assess the models' performance.
 \begin{itemize}
+        
+        \item Metrics Used:
+        \begin{itemize}
+                \item Mean Squared Error (MSE): Measures the average of the squares of the errors—that is, the average squared difference between the estimated values and the actual value.  
+                \item R-squared (R²): Indicates the proportion of the variance in the dependent variable that is predictable from the independent variables.
+        \end{itemize}
+
+
+
         \item XGBoost Performance: 
-        
+
         \begin{itemize}
-                \item RMSE: The RMSE for the XGBoost model was X.
-                \item Other Metrics:
-                \begin{itemize}
-                        \item R-squared: The model's R-squared value was Y.
-                        \item MAE: The Mean Absolute Error for the model was Z.
-                        \item MSE: The Mean Squared Error for the model was W.
-                \end{itemize}
+                \item Mean Squared Error (MSE): 331.45
+                \item R² Score: 0.342
         \end{itemize}
         
-        \item Random Forest Performance: is an ensemble learning method for classification, regression, and other tasks that operates by constructing a multitude of decision trees at training time.
+        The XGBoost model shows a higher MSE of 331.45 and a lower R² score of 0.342 compared to the Random Forest model. This indicates that only 34.2\% of the variance in the adjusted demand can be explained by the XGBoost model.
+
+        \item Random Forest Performance: 
         
         \begin{itemize}
-                \item RMSE: The RMSE for the Random Forest model was A.
-                \item Other Metrics:
-                \begin{itemize}
-                        \item R-squared: The model's R-squared value was B.
-                        \item MAE: The Mean Absolute Error for the model was C.
-                        \item MSE: The Mean Squared Error for the model was D.
-                \end{itemize}
+                \item Mean Squared Error (MSE): 293.95
+                \item R² Score: 0.416
         \end{itemize}
+
+        These results indicate that the Random Forest model has a moderate fit to the data, with an MSE of 293.95 and an R² score of 0.416, meaning approximately 41.6\% of the variance in the adjusted demand can be explained by the model.
+
 \end{itemize}
 
 \section{RESULTS}
